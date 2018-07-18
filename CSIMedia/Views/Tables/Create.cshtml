@@ -7,83 +7,83 @@
 <h2>Create</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Table</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
+        <div class="form-group aGroupCreate">
             @Html.LabelFor(model => model.A, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.A, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.A, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.A, new { htmlAttributes = new { @class = "form-control aNumOrder" } })
+                @Html.ValidationMessageFor(model => model.A, "", new { @class = "text-danger " })
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group bGRoupCreate">
             @Html.LabelFor(model => model.B, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.B, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.B, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.B, new { htmlAttributes = new { @class = "form-control bNumOrder" } })
+                @Html.ValidationMessageFor(model => model.B, "", new { @class = "text-danger " })
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group cGRoupCreate">
             @Html.LabelFor(model => model.C, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.C, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.C, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.C, new { htmlAttributes = new { @class = "form-control cNumOrder" } })
+                @Html.ValidationMessageFor(model => model.C, "", new { @class = "text-danger " })
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group dGRoupCreate">
             @Html.LabelFor(model => model.D, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.D, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.D, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.D, new { htmlAttributes = new { @class = "form-control dNumOrder" } })
+                @Html.ValidationMessageFor(model => model.D, "", new { @class = "text-danger " })
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group eGRoupCreate">
             @Html.LabelFor(model => model.E, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.E, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.E, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.E, new { htmlAttributes = new { @class = "form-control eNumOrder" } })
+                @Html.ValidationMessageFor(model => model.E, "", new { @class = "text-danger " })
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group fGRoupCreate">
             @Html.LabelFor(model => model.F, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.F, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.F, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.F, new { htmlAttributes = new { @class = "form-control fNumOrder" } })
+                @Html.ValidationMessageFor(model => model.F, "", new { @class = "text-danger " })
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group gGRoupCreate">
             @Html.LabelFor(model => model.G, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.G, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.G, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.G, new { htmlAttributes = new { @class = "form-control gNumOrder" } })
+                @Html.ValidationMessageFor(model => model.G, "", new { @class = "text-danger " })
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group hGRoupCreate">
             @Html.LabelFor(model => model.H, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.H, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.H, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.H, new { htmlAttributes = new { @class = "form-control hNumOrder" } })
+                @Html.ValidationMessageFor(model => model.H, "", new { @class = "text-danger " })
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-group jGRoupCreate">
             @Html.LabelFor(model => model.J, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.J, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.J, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.J, new { htmlAttributes = new { @class = "form-control jNumOrder" } })
+                @Html.ValidationMessageFor(model => model.J, "", new { @class = "text-danger " })
             </div>
         </div>
 
@@ -101,4 +101,7 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/TableSort")
+
 }
+

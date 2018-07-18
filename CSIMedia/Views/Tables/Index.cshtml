@@ -7,7 +7,7 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("another list?", "Create")
 </p>
 <table class="table">
     <tr>
@@ -41,41 +41,45 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.A)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.B)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.C)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.D)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.E)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.F)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.G)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.H)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.J)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.A)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.B)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.C)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.D)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.E)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.F)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.G)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.H)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.J)
+            </td>
+            <td>
+                <span class="ascending">
+                    @Html.ActionLink("Ascending", "Edit", new { id = item.Id })
+                </span>|
+                <span class="descending"> @Html.ActionLink("Descending", "Details", new { id = item.Id }) </span> |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
 
 </table>
+@Scripts.Render("~/Scripts/TableSort")
