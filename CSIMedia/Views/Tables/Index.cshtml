@@ -44,31 +44,31 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>
+            <td class="listOrder">
                 @Html.DisplayFor(modelItem => item.A)
             </td>
-            <td>
+            <td class="listOrder">
                 @Html.DisplayFor(modelItem => item.B)
             </td>
-            <td>
+            <td class="listOrder">
                 @Html.DisplayFor(modelItem => item.C)
             </td>
-            <td>
+            <td class="listOrder">
                 @Html.DisplayFor(modelItem => item.D)
             </td>
-            <td>
+            <td class="listOrder">
                 @Html.DisplayFor(modelItem => item.E)
             </td>
-            <td>
+            <td class="listOrder">
                 @Html.DisplayFor(modelItem => item.F)
             </td>
-            <td>
+            <td class="listOrder">
                 @Html.DisplayFor(modelItem => item.G)
             </td>
-            <td>
+            <td class="listOrder">
                 @Html.DisplayFor(modelItem => item.H)
             </td>
-            <td>
+            <td listOrder>
                 @Html.DisplayFor(modelItem => item.J)
             </td>
             <td>
@@ -82,4 +82,3 @@
     }
 
 </table>
-@Scripts.Render("~/Scripts/TableSort")
