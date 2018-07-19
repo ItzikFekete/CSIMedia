@@ -1,0 +1,90 @@
+﻿@model CSIMedia.Table
+
+@{
+    ViewBag.Title = "Descending List";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Table</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.A)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.B)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.B)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.D)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.D)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.E)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.E)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.F)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.F)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.G)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.G)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.H)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.H)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.J)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.J)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -251,9 +251,9 @@
     <Content Include="Views\Media\Index.cshtml" />
     <Content Include="Views\Tables\Create.cshtml" />
     <Content Include="Views\Tables\Delete.cshtml" />
-    <Content Include="Views\Tables\Details.cshtml" />
-    <Content Include="Views\Tables\Edit.cshtml" />
+    <Content Include="Views\Tables\descending.cshtml" />
     <Content Include="Views\Tables\Index.cshtml" />
+    <Content Include="Views\Tables\Ascending.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
