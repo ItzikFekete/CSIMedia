@@ -1,29 +1,28 @@
 ﻿@model CSIMedia.Table
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="~/Scripts/ListOrganiser.js"></script>
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Ascending";
 }
 
-<h2>Details</h2>
+<h2>Ascending Oder</h2>
 
-<div>
-    <h4>Table</h4>
+<div class="ascenidngDisplay">
+    
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.A)
-        </dt>
+    <dl class="dl-horizontal ">
+        
 
         <dd>
-            @Html.DisplayFor(model => model.A)
+            <div class="clonedA"></div>
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.B)
+            
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.B)
+            <div class="clonedB"></div>
         </dd>
 
         <dt>

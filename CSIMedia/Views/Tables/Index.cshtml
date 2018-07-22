@@ -1,5 +1,7 @@
 ﻿@model IEnumerable<CSIMedia.Table>
-
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="~/Scripts/ListOrganiser.js" type="text/javascript"></script>
 @{
     ViewBag.Title = "Index";
 }
@@ -11,74 +13,75 @@
 </p>
 <table class="table">
     <tr>
-        <th>
+        <th class="indexA">
             @Html.DisplayNameFor(model => model.A)
         </th>
-        <th>
+        <th class="indexB">
             @Html.DisplayNameFor(model => model.B)
         </th>
-        <th>
+        <th class="indexC">
             @Html.DisplayNameFor(model => model.C)
         </th>
-        <th>
+        <th class="indexD">
             @Html.DisplayNameFor(model => model.D)
         </th>
-        <th>
+        <th class="indexE">
             @Html.DisplayNameFor(model => model.E)
         </th>
-        <th>
+        <th class="indexF">
             @Html.DisplayNameFor(model => model.F)
         </th>
-        <th>
+        <th class="indexG">
             @Html.DisplayNameFor(model => model.G)
         </th>
-        <th>
+        <th class="indexH">
             @Html.DisplayNameFor(model => model.H)
         </th>
-        <th>
+        <th class="indexJ">
             @Html.DisplayNameFor(model => model.J)
         </th>
-        <th></th>
+        
     </tr>
 
     @foreach (var item in Model)
     {
-        <tr>
-            <td class="listOrder">
-                @Html.DisplayFor(modelItem => item.A)
-            </td>
-            <td class="listOrder">
-                @Html.DisplayFor(modelItem => item.B)
-            </td>
-            <td class="listOrder">
-                @Html.DisplayFor(modelItem => item.C)
-            </td>
-            <td class="listOrder">
-                @Html.DisplayFor(modelItem => item.D)
-            </td>
-            <td class="listOrder">
-                @Html.DisplayFor(modelItem => item.E)
-            </td>
-            <td class="listOrder">
-                @Html.DisplayFor(modelItem => item.F)
-            </td>
-            <td class="listOrder">
-                @Html.DisplayFor(modelItem => item.G)
-            </td>
-            <td class="listOrder">
-                @Html.DisplayFor(modelItem => item.H)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.J)
-            </td>
-            <td>
-                <span class="ascending">
-                    @Html.ActionLink("Ascending", "Edit", new { id = item.Id })
-                </span>|
-                <span class="descending"> @Html.ActionLink("Descending", "Details", new { id = item.Id }) </span> |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-            </td>
-        </tr>
+    <tr>
+        <td class="indexAInput">
+            @Html.DisplayFor(modelItem => item.A)
+        </td>
+        <td class="indexBInput">
+            @Html.DisplayFor(modelItem => item.B)
+        </td>
+        <td class="indexCInput">
+            @Html.DisplayFor(modelItem => item.C)
+        </td>
+        <td class="indexDInput">
+            @Html.DisplayFor(modelItem => item.D)
+        </td>
+        <td class="indexEInput">
+            @Html.DisplayFor(modelItem => item.E)
+        </td>
+        <td class="indexFInput">
+            @Html.DisplayFor(modelItem => item.F)
+        </td>
+        <td class="indexGInput">
+            @Html.DisplayFor(modelItem => item.G)
+        </td>
+        <td class="indexHInput">
+            @Html.DisplayFor(modelItem => item.H)
+        </td>
+        <td class="indexJInput">
+            @Html.DisplayFor(modelItem => item.J)
+        </td>
+        <td>
+            <span class="ascendingView"> <input type="submit" value="Ascending View"class="btn-block"/></span>
+            <span class="ascending">
+                @Html.ActionLink("Ascending", "Edit", new { id = item.Id })
+            </span>|
+            <span class="descendingView"> <button>Descending</button></span>
+            <span class="descending"> @Html.ActionLink("Descending", "Details", new { id = item.Id }) </span>
+        </td>
+  </tr>
     }
 
 </table>
